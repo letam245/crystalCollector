@@ -91,13 +91,13 @@ $(document).ready(function(){
   if (totalScore > targetNumber){
     losses++;
     //// (#update).html("you lost" )
-    alert('You Lost');
+    alert('Your total score is: ' + totalScore + '!' + ' You Lost!');
     reset();
   }
   //check if user won{
   if (totalScore === targetNumber){
     wins++;
-    alert('You Won');
+    alert('Your total score is: ' + totalScore + '!' + ' You Won!');
     reset();
   }
 
