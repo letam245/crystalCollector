@@ -1,4 +1,4 @@
-  $(document).ready(function(){
+$(document).ready(function(){
   // create variable to hold random target number
   var targetNumber;
 
@@ -89,15 +89,15 @@
   console.log("target number: " + targetNumber);
 
   if (totalScore > targetNumber){
-      losses++;
-     //// (#update).html("you lost" )
-      console.log('You Lost');
-      reset();
+    losses++;
+    //// (#update).html("you lost" )
+    alert('You Lost');
+    reset();
   }
   //check if user won{
   if (totalScore === targetNumber){
     wins++;
-    console.log('You Won');
+    alert('You Won');
     reset();
   }
 
@@ -105,7 +105,7 @@
   //   reset();
 
     
-});
+  });
 
 });
 
