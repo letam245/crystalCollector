@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Crystal Collector</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Added link to the jQuery Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <!-- Added a link to Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <!-- Added a link to local style sheet-->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+<div class = "container">
+
+  
+  <div class = "text-center">
+    <h1>Crystal Collector</h1>
+  </div>
+
+
+  <!-- Game Rules -->
+    <div class = "jumbotron">
+      <h3>How to play</h3>
+      <ul>
+      <li>You will be given a random number at the start of the game.</li>
+      <li>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</li>
+      <li>You win the game by matching your total score to random number. You lose the game if your total score goes above the random number.</li>
+      <li>The value of each crystal is hidden from you until you click on it.</li>
+      <li>Each time when the game starts, the game will change the values of each crystal.</li>
+      </ul>
+    </div>
+
+  <!-- Begin first row -->
+  <!-- Target Numer -->
+    <div class = "row">
+      <div class = "col-sm-4">
+      <div class="panel panel-default">
+          <div class="panel-heading text-center">
+            <h3 class="panel-title">Target Number</h3>
+          </div>
+          <div class="panel-body">
+            <div class="text-center">
+              <h2 id= "target-number"></h2>
+            </div>
+          </div>
+      </div>
+      </div>
+
+  <!-- crystal images -->
+      <div class = "col-sm-8">
+        <div class ="row margin">
+          <div class = "col-xs-3 crystal" value="blue">
+            <img src = "assets/images/blue.png" class ="img-responsive" alt = "Blue"> 
+          </div>
+          <div class = "col-xs-3 crystal" value="red">
+            <img src = "assets/images/red.png" class ="img-responsive" alt="Red">
+          </div>
+          <div class = "col-xs-3 crystal" value="green">
+            <img src = "assets/images/green.png" class ="img-responsive" alt="Green">
+          </div>
+          <div class = "col-xs-3 crystal" value="yellow">
+            <img src = "assets/images/yellow.png" class ="img-responsive" alt="Yellow">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  
+  <!-- Begin second row -->
+  <!-- totalScore -->
+    <div class="row thirdrow">
+      <div class="col-sm-4">
+        <div class="panel panel-default">
+          <div class="panel-heading text-center">
+            <h3 class="panel-title">Your total score</h3>
+          </div>
+          <div class="panel-body">
+            <div class="text-center">
+              <h2 id= "total-score">total-score</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  <!-- wins / losses boxes -->
+    <div class="col-sm-8">
+      <div class="row text-center">
+        <div class="col-xs-6">
+          <h3>Wins: </h2>
+          <p id ="wins"></p>
+        </div>
+        <div class="col-xs-6">
+          <h3>Losses: </h2>
+          <p id ="losses"></p>
+         </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- Link to javascript game.js -->
+  <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</body>
+</html>
